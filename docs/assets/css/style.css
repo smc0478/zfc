@@ -1,0 +1,133 @@
+:root {
+  color-scheme: light dark;
+  --background: #ffffff;
+  --foreground: #202124;
+  --muted: #5f6368;
+  --border: #dfe1e5;
+  --link: #0759b7;
+  --code-background: #f6f8fa;
+  --content-width: 52rem;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --background: #111418;
+    --foreground: #e6edf3;
+    --muted: #9da7b3;
+    --border: #30363d;
+    --link: #71b7ff;
+    --code-background: #1b2027;
+  }
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  font-family: ui-serif, Georgia, "Noto Serif KR", serif;
+  line-height: 1.75;
+}
+
+body {
+  max-width: var(--content-width);
+  margin: 0 auto;
+  padding: 0 1.25rem;
+  color: var(--foreground);
+  background: var(--background);
+}
+
+a {
+  color: var(--link);
+}
+
+.site-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1rem;
+  padding: 1.25rem 0;
+  border-bottom: 1px solid var(--border);
+}
+
+.site-title {
+  color: var(--foreground);
+  font-family: ui-sans-serif, system-ui, sans-serif;
+  font-size: 1.2rem;
+  font-weight: 700;
+  text-decoration: none;
+}
+
+nav {
+  display: flex;
+  gap: 1rem;
+  font-family: ui-sans-serif, system-ui, sans-serif;
+  font-size: 0.9rem;
+}
+
+.content {
+  min-height: 70vh;
+  padding: 2.5rem 0;
+}
+
+h1,
+h2,
+h3 {
+  line-height: 1.3;
+}
+
+h2 {
+  margin-top: 2.5rem;
+  padding-bottom: 0.3rem;
+  border-bottom: 1px solid var(--border);
+}
+
+code,
+pre {
+  font-family: ui-monospace, SFMono-Regular, Consolas, monospace;
+  background: var(--code-background);
+}
+
+code {
+  padding: 0.1em 0.3em;
+  border-radius: 0.25rem;
+}
+
+pre {
+  overflow-x: auto;
+  padding: 1rem;
+  border: 1px solid var(--border);
+  border-radius: 0.4rem;
+}
+
+pre code {
+  padding: 0;
+}
+
+blockquote {
+  margin-left: 0;
+  padding-left: 1rem;
+  color: var(--muted);
+  border-left: 0.25rem solid var(--border);
+}
+
+mjx-container[display="true"] {
+  overflow-x: auto;
+  overflow-y: hidden;
+  padding: 0.5rem 0;
+}
+
+.site-footer {
+  padding: 1.5rem 0;
+  color: var(--muted);
+  border-top: 1px solid var(--border);
+  font-family: ui-sans-serif, system-ui, sans-serif;
+  font-size: 0.85rem;
+}
+
+@media (max-width: 36rem) {
+  .site-header {
+    align-items: flex-start;
+    flex-direction: column;
+  }
+}

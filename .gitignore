@@ -1,0 +1,11 @@
+# Lean build output
+.lake/
+build/
+
+# Generated documentation site
+site/
+
+# Editor and operating-system files
+.DS_Store
+*.swp
+*~
