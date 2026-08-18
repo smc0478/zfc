@@ -14,3 +14,4 @@ lang: ko
 ### 0000. 1차 논리
 
 - [0000. 언어와 문법](./0000-first-order-logic/0000-language_and_syntax_kr.html)
+- [0001. 편의를 위한 기호](./0000-first-order-logic/0001-derived_notation_kr.html)
