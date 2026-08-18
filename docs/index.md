@@ -9,14 +9,8 @@ This site collects proofs developed from the axioms of ZFC. Each proof will be a
 
 [한국어로 읽기](./index_kr.html)
 
-## LaTeX rendering
+## Contents
 
-Inline mathematics is written between dollar signs, for example $x \in A$.
+### 0000. First-order logic
 
-Display mathematics is written between double dollar signs:
-
-$$
-A \subseteq B \iff \forall x\,(x \in A \rightarrow x \in B).
-$$
-
-Proof documents will be added later.
+- [0000. Language and Syntax](./0000-first-order-logic/0000-language_and_syntax.html)
