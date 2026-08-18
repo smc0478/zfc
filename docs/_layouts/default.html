@@ -27,8 +27,8 @@
     <header class="site-header">
       <a class="site-title" href="{{ '/' | relative_url }}">{{ site.title }}</a>
       <nav aria-label="Language">
-        <a href="{{ page.en_url | default: '/' | relative_url }}" lang="en">English</a>
-        <a href="{{ page.ko_url | default: '/index_kr.html' | relative_url }}" lang="ko">한국어</a>
+        <a href="{{ page.en_url | default: '/index_en.html' | relative_url }}" lang="en">English</a>
+        <a href="{{ page.ko_url | default: '/' | relative_url }}" lang="ko">한국어</a>
       </nav>
     </header>
 
